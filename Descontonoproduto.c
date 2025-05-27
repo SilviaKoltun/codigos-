@@ -1,22 +1,42 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-int main (){
-    int preco;
-    int desconto;
+int main() {
+    int precoProd;
+    printf ("Digite o preco do produto: ");
+    scanf ("%i", &precoProd);
 
-    printf ("Digite o preço do produto");
-    scanf ("%i",&preco);
+    switch (precoProd){
+            case 100:
+            precoProd = precoProd - precoProd*0.1;
+            printf ("Preco com desconto: %i", precoProd);
+            break;
 
-    if (preco >= 100){
-        desconto = preco - preco*0.01;
-        printf ("desconto de 10% = %i", desconto);
+            case 200:
+            precoProd = precoProd - precoProd*0.2;
+            printf ("Preco com desconto: %i", precoProd);
+            break;
+
+            case 300:
+            precoProd = precoProd - precoProd*0.3;
+            printf ("Preco com desconto: %i", precoProd);
+            break;
+
+            case 400:
+            precoProd = precoProd - precoProd*0.4;
+            printf ("Preco com desconto: %i", precoProd);
+            break;
+
+            case 500:
+            precoProd = precoProd - precoProd*0.5;
+            printf ("Preco com desconto: %i", precoProd);
+            break;
+
+            default:
+                printf ("nao aplica desconto");
     }
-    else {
-        printf ("nao teve desconto");
-    }
+    return 0;
 
 
-return(0);
 
 }
