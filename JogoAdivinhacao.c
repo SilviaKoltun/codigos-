@@ -3,21 +3,24 @@
 
 int main() {
     int numU;
-    int n =20;
-    int contador =0;
+    int n = 20;
+    int contador;
 
     while (numU != n ){
-        printf ("Digite um Numero" );
+        printf ("Digite um Numero: " );
         scanf ("%i", &numU);
         contador ++;
 
     if (n > numU){
-        printf ("O numero eh maior");
-    }
+        printf ("O numero eh maior" \n);
+
     else if (n < numU){
-        printf ("O Numero eh menor");
+        printf ("O Numero eh menor" \n);
+
     }
     }
+
+    printf ("Voce acertou na tentativa %i, contador");
 
 
 return 0;
